@@ -62,10 +62,7 @@ const ProjectsPage = () => {
               fontWeight: '700',
               letterSpacing: '-0.02em',
               marginBottom: '1rem',
-              color: '#00d2ff',
-              background: '-webkit-linear-gradient(0deg, #c084fc, #22d3ee)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              color: '#a855f7',
             }}>
               Featured Projects
             </h1>

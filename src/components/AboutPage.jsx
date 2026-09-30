@@ -3,12 +3,12 @@ import profileImg from '../assets/images/profile.jpg';
 import { useReveal } from '../hooks/useReveal';
 
 const skills = [
-  { category: 'Mobile',    items: ['Flutter', 'Dart', 'React Native'],           variant: 'purple' },
-  { category: 'Frontend',  items: ['React', 'Next.js', 'Tailwind', 'HTML/CSS'],  variant: 'purple' },
-  { category: 'Backend',   items: ['Laravel', 'PHP', 'REST APIs'],               variant: 'cyan'   },
-  { category: 'Database',  items: ['MySQL', 'Convex', 'Hive'],                   variant: 'cyan'   },
-  { category: 'Tools',     items: ['Git', 'GitHub', 'VS Code', 'Figma'],         variant: 'neutral' },
-  { category: 'Languages', items: ['JavaScript', , 'Dart', 'PHP'],   variant: 'neutral' },
+  { category: 'Mobile', items: ['Flutter', 'Dart', 'React Native'], variant: 'purple' },
+  { category: 'Frontend', items: ['React', 'Next.js', 'Tailwind', 'HTML/CSS'], variant: 'purple' },
+  { category: 'Backend', items: ['Laravel', 'PHP', 'REST APIs'], variant: 'cyan' },
+  { category: 'Database', items: ['MySQL', 'Convex', 'Hive'], variant: 'cyan' },
+  { category: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Figma'], variant: 'neutral' },
+  { category: 'Languages', items: ['JavaScript', , 'Dart', 'PHP'], variant: 'neutral' },
 ];
 
 const education = [
@@ -27,9 +27,9 @@ const education = [
 ];
 
 const AboutPage = () => {
-  const bioRef    = useReveal();
+  const bioRef = useReveal();
   const skillsRef = useReveal();
-  const eduRef    = useReveal();
+  const eduRef = useReveal();
 
   return (
     <div style={{ maxWidth: '860px', margin: '0 auto', padding: '4rem 2rem 6rem' }}>
@@ -55,15 +55,15 @@ const AboutPage = () => {
             letterSpacing: '-0.02em',
             marginBottom: '4px',
           }}>
-            <span className="gradient-text">Uchechukwu Divine</span>
+            <span style={{ color: '#a855f7' }}>Uchechukwu Divine</span>
           </h1>
           <p style={{ fontSize: '15px', color: 'var(--text-secondary)', marginBottom: '12px' }}>
-            Full-Stack Developer &nbsp;·&nbsp; MSc Computer Science Student
+            Full-Stack Developer &nbsp;·&nbsp; MSc Computer Science (in-view)
           </p>
           <div style={{ display: 'flex', gap: '12px' }}>
             {[
               { label: 'GitHub', href: 'https://github.com/Uchedivine' },
-              { label: 'Email',  href: 'mailto:uchedivine65@gmail.com' },
+              { label: 'Email', href: 'mailto:uchedivine65@gmail.com' },
             ].map(l => (
               <a key={l.label} href={l.href}
                 target={l.href.startsWith('http') ? '_blank' : undefined}
@@ -87,15 +87,8 @@ const AboutPage = () => {
         padding: '1.75rem',
         marginBottom: '2.5rem',
       }}>
-        <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginBottom: '1rem' }}>
-          A highly motivated full-stack developer with hands-on experience building mobile and web
-          applications. My preferred stack includes Flutter, Laravel, React, and modern web
-          technologies. I thrive in problem-solving and creating seamless user experiences.
-        </p>
         <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-          Recently completed the HNG Internship Program across 14 projects spanning mobile,
-          frontend, and backend tracks. Currently deepening my academic foundations through an MSc
-          in Computer Science, where I enjoy bridging theory with practical engineering.
+          Full-Stack Developer with hands-on experience building web and mobile applications using Flutter, Laravel, and React. Passionate about problem-solving, clean architecture, and delivering seamless user experiences. Currently pursuing an MSc in Computer Science, bridging strong theoretical foundations with practical software engineering.
         </p>
       </div>
 

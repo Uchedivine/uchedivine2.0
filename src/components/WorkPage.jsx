@@ -195,7 +195,7 @@ const WorkPage = () => {
           letterSpacing: '-0.02em',
           marginBottom: '0.5rem',
         }}>
-          <span className="gradient-text">Experience</span>
+          <span style={{ color: '#a855f7' }}>Experience</span>
         </h1>
         <p style={{ color: 'var(--text-secondary)', fontSize: '14px' }}>
           My professional journey across different companies and roles.

@@ -11,7 +11,7 @@ const HomePage = ({ setCurrentPage }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '2rem',
+      padding: '1rem 2rem 2rem',
       position: 'relative',
     }}>
       <div ref={heroRef} className="reveal" style={{ textAlign: 'center', maxWidth: '680px', width: '100%' }}>
@@ -46,7 +46,7 @@ const HomePage = ({ setCurrentPage }) => {
           marginBottom: '1.25rem',
           letterSpacing: '-0.03em',
         }}>
-          <span className="gradient-text-animated">I build things</span>
+          <span style={{ color: '#a855f7' }}>I build things</span>
           <br />
           <span style={{ color: '#ffffff' }}>people actually use.</span>
         </h1>
